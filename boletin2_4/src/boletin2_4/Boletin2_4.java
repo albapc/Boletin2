@@ -1,21 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package boletin2_4;
 
-/**
- *
- * @author oracle
- */
+import java.util.Scanner;
+
+
 public class Boletin2_4 {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner ler= new Scanner (System.in);
+        int cantInicial, billetes100, billetes20, billetes5, monedas1, resto;
+        System.out.println("Introduce cantidade en euros:");
+        cantInicial=ler.nextInt();
+        billetes100=cantInicial/100;
+        resto=cantInicial%100;
+        billetes20=resto/20;
+        resto=resto%20;
+        billetes5=resto/5;
+        monedas1=resto%5;
+        
+       System.out.println("Cantidade total:\n"+billetes100+" billetes de 100€\n"
+               +billetes20+" billetes de 20€\n"+billetes5+" billetes de 5€\n"+monedas1+" monedas de 1€.");
     }
     
 }
