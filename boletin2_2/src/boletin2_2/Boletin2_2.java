@@ -11,7 +11,7 @@ public class Boletin2_2 {
        Scanner ler= new Scanner (System.in);
        float graosC, graosF, graosK;
        System.out.println("Introduce graos centígrados");
-       graosC=ler.nextDouble();
+       graosC=ler.nextFloat();
        graosF= 32+(9*graosC/5);
        graosK= graosC+273.15f;
        System.out.println("Graos Fahrenheit: "+graosF +".\nGraos Kelvin: "+graosK+".");
